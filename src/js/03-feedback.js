@@ -23,7 +23,7 @@ function onFormInput() {
 
 function onFormSubmit(evt) {
     evt.preventDefault();
-    console.log(parsedMessage);
+    console.log(JSON.parse(savedMessage));
     evt.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
 };
